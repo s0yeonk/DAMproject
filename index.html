@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daegu Art Museum</title>
+  <!-- waypoint -->
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+  integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  ></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" href="/image/로고/favicon.png" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  </style>
+</head>
+<body style="overflow-x:hidden;">
+  <!-- 모바일 Nav-->
+  <div class="sticky_menu">
+    <div class="sticky_left">
+      <ul>
+        <li><span class="Bebas" id="menuBtn2">MENU</span></li>
+        <li><a href="#" class="Bebas">HOME</a></li>
+      </ul>
+    </div>
+    <div class="sticky_right">
+      <a href="#" class="Bebas">STORE</a>
+    </div>
+  </div>
+  <!-- 모달창 -->
+
+  <div class="modal modal_hidden">
+    <div class="modal_overlay"></div>
+    <div class="modal_container">
+      <div class="modal_left">
+        <button class="modalClose">
+          <i class="fa-solid fa-x"></i> 
+        </button>
+        <div class="modal_period Bebas">
+          2022.07.12 | 2023.02.28
+        </div>
+      </div>
+      <div class="modal_right">
+        <div class="modal_title">
+          <div class="modal_maintitle">&lt;다니엘 뷔렌 &gt; </div>
+          <div class="modal_subtitle"></div>
+        </div>
+        <div class="modal_maincontent">
+          <div class="modal_poster">
+            <img src="images/포스터/다니엘뷔렌2.png" alt="">
+          </div>
+          <div class="modal_text">
+            <div><span class="modalBold">전시기간: </span>2022.07.12(화)~2023.02.28(화)</div>
+            <div><sapn class="modalBold">전시장소: </sapn>대구미술관 1전시실 어미홀</div>
+            <div><span class="modalBold">참여작가: </span>다니엘뷔렌(Daniel Buren,1938-)</div>
+            <div><span class="modalBold">전시규모: </span>설치,회화,필름 등 24점</div>
+            <div class="modal_ex">
+              <div><span class="modalBold">전시설명</span></div>
+              <span>
+                대구미술관은 오는 7월 12일부터 프랑스 현대미술의 거장 다니엘 뷔렌의 개인전을 개최한다. 이번 전시는 국내 국공립미술관으로는 최초로 개최하는 뷔렌의 개인전으로, 특별히 그가 직접 제작한 필름 《시간을 넘어, 시선이 닿는 끝에》와 대형 설치작품 《어린아이의 놀이처럼》이 아시아권 최초로 소개된다.<br><br>
+                1938년 프랑스 블로뉴-빌랑쿠르(Boulogne-Billancourt) 출생의 다니엘 뷔렌은, 왕성한 작품 활동을 통해 끊임없이 변화를 추구하며 국제 미술계에서 찬미와 논쟁을 동시에 불러일으키고 있는 작가이다.
+                1986년 파리 팔레-루아얄(Palais-Royal)의 안뜰에서 공공미술 작품 《두 개의 고원》을 소개하며 다시한번 큰 주목을 받기 시작한 그는, 같은 해 개최된 제42회 베니스비엔날레에서 황금사자상을 수상하고, 이후 뉴질랜드에서 리빙 트레져상(1990), 슈투트가르트에서 국제 최우수 아티스트상(1991), 일본에서 프리미엄 임페리얼 예술상(2007) 등을 수상하며 세계 곳곳에 자신의 ‘인-시튜(In-Situ)’ 작품을 남기고 있다.<br><br>
+                1960년대 초부터 작품의 내용과 형식의 관계를 자유롭게 다루었던 뷔렌은, 작업 초기에는 원형과 줄무늬를 조합하며 작업의 간결성을 방법론적으로 구축해 나갔다. 이후 1965년부터 폭 8.7cm의 흰색과 유채색으로 구성된 산업용 천을 세로로 교차 배열하는 방식을 시도하면서, 이 소재가 가진 수 많은 가능성으로부터 회화와 표현방식, 나아가 예술가가 개입하는 사회와 물리적 환경에 대해 고민하기 시작한다.1967년, 길거리를 시작으로 ‘작품을 수용하는 공간’에 질문을 던지기 시작한 그는, 갤러리, 미술관, 건축물 등으로 시선을 옮기면서‘인 시튜(In-situ) 개념을 고안하고, 이것은 지금까지 그의 작품 세계를 설명하는 대표적인 모티브로 자리 잡는다.뷔렌에 의해 일명 ‘시각적 도구(Outil visuel)’라고 불리우는 세로 줄무늬는 그의 ‘인 시튜’ 작업이 어떠한 구조를 가지고 있는지 선명하게 보여준다. 회화, 조각, 건축물의 사이사이 혹은 특별하거나 복잡한 특정 장치의 내부에 배치된 세로 줄무늬는 그가 작업하는 공간의 중요한 특징을 담담하게 ‘폭로’한다.<br><br>
+                작품과 공간의 특정한 관계성에 주목하는 뷔렌의 이번 전시는, 크게 세 공간에서 관람객을 맞이한다. 먼저, 관람객이 가장 먼저 만나게 될 어미홀에는 그동안 우리가보아왔던 넓고 긴 홀에 흰색과 회색으로 도색된 방이 조성되고, 그 안에는 작가가 지금까지 단 네 곳(프랑스, 이탈리아, 오스트레일리아, 멕시코)에서만 공개했던 대형 설치 작품 《어린아이의 놀이처럼》이 소개된다. 이곳에서 관람객은 최대6m 높이의 사면체, 정육면체, 원통형, 피라미드 또는 아치 형태의 기하학적 모양의 모듈들을 마주하며, 대칭적으로 배치되어 있는 이 모듈들 사이를 자유롭게 산책할 수 있다. 흡사 가상의 대형 건축 게임 속을 걷는 것 같은 이 같은 경험은, 관람자로 하여금 다색의 입체적인 공간감을 느낄 수 있게 안내할 것이다.<br><br>
+                이후 1전시실로 들어가면 작가가 직접 감독하고 제작한6시간30분짜리 다큐멘터리 필름 《시간을 넘어, 시선이 닿는 끝에》를 만나게 된다. 광활한 벽면을 가득 채운 이 영상은, 작가가 그동안 걸어왔던 과거의 시간과 여러 에피소드들을 집약적으로 소개한다. 1968년 하랄드 제만의 전시가 있었던 스위스 베른에서 시작되는 이 필름은, 뷔렌의 자서전과 같은 작품이다. 관람객은 이 영상을 통해 뷔렌이 얼마나 도전적이며, 전위적이고, 용기있는 작가인지 어렵지 않게 알 수 있을 것이다.<br>
+              </span>
+
+            </div>
+            <div class="ex_img">
+              <div class="modal_sub modalBold">작품이미지</div>
+              <div>
+                <div class="swiper modal_swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="images/뷔렌/1.jpeg" alt="다니엘뷔렌 전시 이미지1">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/뷔렌/2.jpeg" alt="다니엘뷔렌 전시 이미지2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/뷔렌/3.jpeg" alt="다니엘뷔렌 전시 이미지3">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/뷔렌/4.jpeg" alt="다니엘뷔렌 전시 이미지4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ex_goods">
+              <div class="ex_goods_top">
+                <div class="modal_sub modalBold">전시굿즈</div>
+                <div><a href="#">온라인스토어 바로가기</a></div>
+              </div>
+              <div class="ex_goodsImg">
+                <div class="swiper modal_swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="images/굿즈/smallgoods/뷔렌도록.png" alt="다니엘 뷔렌의 도록 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/굿즈/smallgoods/뷔렌스티커.png" alt="다니엘 뷔렌 스티커 굿즈 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/굿즈/smallgoods/뷔렌스티커2.png" alt="다니엘 뷔렌 스티커 굿즈 이미지2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/굿즈/smallgoods/뷔렌휴대폰.jpeg" alt="다니엘 뷔렌 휴대폰 케이스 굿즈">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--투표 모달창 -->
+  <div class="vote_modal1 modal_hidden">
+    <div class="vote_modal_overlay"></div>
+    <div class="votemodal_container">
+      <button class="voteClose">
+        <i class="fa-solid fa-x"></i> 
+      </button>
+      <div class="vote_top">
+        <div class="vote_title">
+          <div>사이의 공간: 한국 근대미술</div>
+          <div>이쾌대 푸른 두루마기를 입은 자화상 </div>
+        </div>
+      </div>
+      <div class="vote_bottom">
+        <div class="vote_img">
+          <img src="images/vote/나혜석.png" alt="">
+        </div>
+        <div class="vote_ex">
+          <div class="vote_Ex">
+            <div>
+              <div><푸른두루마기를 입은 자화상>은 전문적 화가로서 자신의 정체성을 표현한 작품입니다. 그의 작품에는 서양적인 것과 한국적인 것이 공존한다는 점이 특징인데요 이번 전시는 1897년부터 1965년까지의 시기인 한국 격동의 시대에서 태어난 나혜석, 김환기, 이중섭, 고희동 등한국 근대 작가들이 총 망라된 나혜석, 김환기, 이중섭, 고희동 등 한국의 근대 미술작품을 대구미술관에서 만나보시겠습니까?</div>
+            </div>
+            <div class="vote_select vote_pc">
+              <div>이 작품을 선택하시겠습니까?</div>
+              <div class="voteIcon">
+                <div class="voteBtn">
+                  <button>
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                  <span>투표하기</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vote__current vote_vnone">
+            <div class="vote__current_title">다음 시즌 대구미술관 전시 투표 현황!</div>
+            <div class="vote__current_ex">
+              <div>사이의 공간: 한국 근대미술</div>
+              <div class="vote__current_num num1">
+                <div class="progress pr1"></div>
+                <div>60%</div>
+              </div>
+            </div>
+            <div class="vote__current_ex">
+              <div>박서희 개인전</div>
+              <div class="vote__current_num num2">
+                <div class="progress pr2"></div>
+                <div>40%</div>
+              </div>
+            </div>
+            <div class="vote__current_ex">
+              <div>김준수 개인전</div>
+              <div class="vote__current_num num3">
+                <div class="progress pr3"></div>
+                <div>35%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="vote_select vote_mobile">
+          <div>이 작품을 선택하시겠습니까?</div>
+          <div class="voteIcon">
+            <div class="voteBtnmb">
+              <button>
+                <i class="fa-solid fa-check"></i>
+              </button>
+              <span>투표하기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="vote_modal2 modal_hidden">
+    <div class="vote_modal_overlay"></div>
+    <div class="votemodal_container">
+      <button class="voteClose voteClose2 ">
+        <i class="fa-solid fa-x"></i> 
+      </button>
+      <div class="vote_top">
+        <div class="vote_title">
+          <div>박서희 개인전</div>
+          <div>조선 백자의 현대화  </div>
+        </div>
+      </div>
+      <div class="vote_bottom">
+        <div class="vote_img">
+          <img src="images/vote/박서희도예가.png" alt="">
+        </div>
+        <div class="vote_ex">
+          <div class="vote_Ex">
+            <div>
+              <div>서울대학교 미술대학 디자인학부와 동 대학원에서 도예를 전공한 박서희 작가는 전통 유물에서 모티브를 얻고 형태나 장식을 현대적으로 재해석하는 과정을 통해 현대인들의 정서에 부합하는 도자기를 제작하고자 노력하고 있습니다. 박서희 작가는 '조선 백자의 현대화'를 작업의 화두로 삼아 활동하고 있습니다. 순도 높은 백색 흙 위에 물과 나뭇잎을 연상시키는 푸른 빛깔의 유약을 입히는 과정을 거쳐 완성된 아름다운 작품을 대구미술관에서 만나보시겠습니까?</div>
+            </div>
+            <div class="vote_select vote_pc">
+              <div>이 작품을 선택하시겠습니까?</div>
+              <div class="voteIcon">
+                <div>
+                  <button>
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                  <span>투표하기</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="vote__current vote_vnone">
+            <div class="vote__current_title">다음 시즌 대구미술관 전시 투표 현황!</div>
+            <div class="vote__current_ex">
+              <div>사이의 공간: 한국 근대미술</div>
+              <div class="vote__current_num num1">
+                <div class="progress pr1"></div>
+                <div>60%</div>
+              </div>
+            </div>
+            <div class="vote__current_ex">
+              <div>박서희 개인전</div>
+              <div class="vote__current_num num2">
+                <div class="progress pr2"></div>
+                <div>40%</div>
+              </div>
+            </div>
+            <div class="vote__current_ex">
+              <div>김준수 개인전</div>
+              <div class="vote__current_num num3">
+                <div class="progress pr3"></div>
+                <div>35%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="vote_select vote_mobile">
+          <div>이 작품을 선택하시겠습니까?</div>
+          <div class="voteIcon">
+            <div>
+              <button>
+                <i class="fa-solid fa-check"></i>
+              </button>
+              <span>투표하기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="vote_modal3 modal_hidden">
+    <div class="vote_modal_overlay"></div>
+    <div class="votemodal_container">
+      <button class="voteClose voteClose3">
+        <i class="fa-solid fa-x"></i> 
+      </button>
+      <div class="vote_top">
+        <div class="vote_title">
+          <div>김준수 개인전</div>
+          <div>Time Fo/r/est</div>
+        </div>
+      </div>
+      <div class="vote_bottom">
+        <div class="vote_img">
+          <img src="images/vote/김준수1.png" alt="">
+        </div>
+        <div class="vote_ex">
+          <div class="vote_Ex">
+            <div >
+              <div>가죽으로 오브제를 빚는 김준수 작가의 작품입니다. 나이테를 닮아 얼핏 보면 나무인가 싶지만 가죽 공예품으로 레더 볼 시리즈는 나무의 결을 만들려고 의도한 것은 아니었습니다. 가죽의 특성을 극대화 할 수 있는 방법을 사용하여 가죽에 화학처리를 하지 않고 자연적 마감인 옻칠을 통해 만들어 낸 작품입니다. 김준수 작가의 작품을 대구 미술관에서 만나보시겠습니까?</div>
+            </div>
+            <div class="vote_select vote_pc">
+              <div>이 작품을 선택하시겠습니까?</div>
+              <div class="voteIcon">
+                <div class=voteBtn>
+                  <button>
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                  <spane>투표하기</spane>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="vote_select vote_mobile">
+          <div>이 작품을 선택하시겠습니까?</div>
+          <div class="voteIcon">
+            <div>
+              <button>
+                <i class="fa-solid fa-check"></i>
+              </button>
+              <span>투표하기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header -->
+  <header>
+    <div class="header_container">
+      <div class="header__logo">
+        <img src="images/로고/logo.png" alt="">
+      </div>
+      <div class="header__icons">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass search_icon"></i>
+          <!-- <i class="fa-solid fa-x"></i>  -->
+        </div>
+        <div id="menuBtn_pc"><i class="fa-solid fa-bars"></i></div>
+      </div> 
+    </div>
+    <!-- 슬라이드 메뉴-->
+    <div class="slide-menu">
+      <div class="slide-left">
+        <div class="slide-menu__top">
+          <div>
+            <img class="slide_logo" src="images/로고/logo_W.svg" alt="">
+          </div>
+          <span class="slide-menu__close Bebas">close</span>
+        </div>
+        <div class="slide-menu__search_mb">
+          <form class="slide-menu__form">
+            <input type="text" placeholder="검색어를 입력하세요">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="slide-menu__poster">
+          <div class="slide_poster">
+            <img src="images/포스터/이배2.png" alt="">
+          </div>
+          <div class="slide_tag">
+            <div>#이배</div>
+            <div>#다니엘뷔렌</div>
+            <div>#정다혜</div>
+            <div>#히토</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-right">
+        <span class="slide-menu__close_pc Bebas">close</span>
+        <div class="slide-menu__menu slide-on">
+          <ul>
+            <li style="margin-top: 1.5625rem;"><a href="#">전시</a></li>
+            <li><a href="#">교육 및 행사</a></li>
+            <li><a href="#">소장자료</a></li>
+            <li><a href="#">커뮤니티/소식</a></li>
+            <li><a href="../About.html">미술관소개</a></li>
+            <li><a href="#">온라인스토어</a></li>
+          </ul>
+        </div>
+        <div class="slid-menu__num">
+          <div>+82 53 803 7900</div>
+          <div>+82 53 803 7859</div>
+        </div>
+      </div>
+    </div>
+    <div class="search_wrapper">
+      <div class="desk_search">
+        <div class="search__slide">
+            <div class="slide_container">
+              <input type="text" class="search_input" placeholder="검색어를 입력하세요">
+              <button type="submit">검색</button>
+            </div>
+          <div class="slide_tag_container">
+            <ul>
+              <li>#현재 전시</li>
+              <li>#히토 슈타이얼</li>
+              <li>#숯의작가 이배</li>
+              <li>#다니엘뷔렌</li>
+              <li>#비조각적 조각</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header END -->
+
+  <div id="NowExhibition">
+    <!-- 현재전시 :슬라이드-->
+    <div class="Exhibition_container">
+      <div id="Now_Exhibition">
+        <div class="nowEx_title">
+          <div class="nowBtn Btn1 Bebas K_color" data-view="A">WHAT'S ON</div>
+          <div class="nowBtn Btn2 Bebas" data-view="B">EVENTS</div>
+          <div class="nowBtn Btn3 Bebas" data-view="C">ALL</div>
+        </div>
+    
+        <div style="overflow:hidden;">
+          <div class="on__content view-List" data-view="A">
+            <div class="swiper first-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/다니엘뷔렌2.png" alt="다니엘뷔렌 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>다니엘뷔렌</div>
+                      <div>2022.07.12-2023.02.28</div>
+                    </div>
+                    <button class="modalOpen">더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/히토슈타이얼.png" alt="히토슈타이얼 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>히토슈타이얼_데이터의 바다</div>
+                      <div>2023.01.26-2023.03.31</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/정광호/정광호.jpg" alt="정광호 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>정광호_비조각적 조각</div>
+                      <div>2023.02.04-2023.04.03</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/이배2.png" alt="이배 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>숯의 작가 이배</div>
+                      <div>2023.02.13-2023.04.27</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event__content view-List v-none" data-view="B">
+            <div class="swiper first-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/뷔렌굿즈포스터.gif" alt="뷔렌굿즈 오픈 이벤트포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>다니엘뷔렌<br> 굿즈출시 기념행사</div>
+                      <div>2023.02.01-2023.03.02</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/이벤트3.png" alt="굿바이2022 헬로우2023 이벤트포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>굿바이2022 헬로우2023</div>
+                      <div>2023.01.03-2023.01.05</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/캘린더나눔.png" alt="2023캘린더나눔 이벤트포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>2023 캘린더 나눔 이벤트</div>
+                      <div>2023.01.01-2023.02.30</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/굿즈출시이베트.jpg" alt="대구미술관 굿즈 출시 이벤트 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>DAM ONLY!</div>
+                      <div>2022.12.30-2023.01.31</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/이벤트4.png" alt="추석연휴 무료입장 이벤트포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>추석연휴 무료입장</div>
+                      <div>2022.09.09-2022.09.12</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all view-List v-none" data-view="C">
+            <div class="swiper first-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/이배2.png" alt="이배 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>숯의 작가 이배</div>
+                      <div>2023.02.13-2023.04.27</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/정광호/정광호.jpg" alt="정광호 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>정광호_비조각적 조각</div>
+                      <div>2023.02.04-2023.04.03</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/뷔렌굿즈포스터.gif" alt="다니엘뷔렌 굿즈출시 기념행사 이벤트포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>다니엘뷔렌<br> 굿즈출시 기념행사</div>
+                      <div>2023.02.01-2023.03.02</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/히토슈타이얼.png" alt="히토슈타이얼 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>히토슈타이얼_데이터의 바다</div>
+                      <div>2023.01.26-2023.03.31</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/이벤트3.png" alt="굿바이2022 헬로우2023 이벤트포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>굿바이2022 헬로우2023</div>
+                      <div>2023.01.03-2023.01.05</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/캘린더나눔.png" alt="2023 캘린더 나눔 이벤트포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>2023 캘린더 나눔 이벤트</div>
+                      <div>2023.01.01-2023.02.30</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/굿즈출시이베트.jpg" alt="대구미술관 굿즈 출시 이벤트포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>DAM ONLY!</div>
+                      <div>2022.12.30-2023.01.31</div>
+                    </div>
+                    <button>더보기</button>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="now_poster">
+                    <img src="images/포스터/다니엘뷔렌2.png" alt="다니엘뷔렌 포스터">
+                  </div>
+                  <div class="now_title">
+                    <div class="now_maintitle">
+                      <div>다니엘뷔렌</div>
+                      <div>2022.07.12-2023.02.28</div>
+                    </div>
+                    <button class="modalOpen">더보기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- 슬라이드 END -->
+    <!-- 예정전시 :호버-->
+    <div class="Upcoming_container ct_margin" onmouseover="body.style.backgroundColor='#fff'">
+      <div class="content__title Bebas center" data-aos="fade-up" data-aos-duration="500">UPCOMING</div>
+      <div class="content__subtitle center up">마우스를 올려 대구미술관의 예정전시를 확인해보세요</div>
+      <div class="upcoming__content">
+        <div class="cardcontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="images/포스터/키시오스가_예정/키시오스가.jpg" alt="키시오스가 포스터">
+            </div>
+            <div class="theback">
+              <div>
+                <h1>2023/03/15</h1>
+                <h3>KISHIO SUGA</h3>
+                <p>대구미술관 4,5전시실</p>
+                <a href="#">자세히보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardcontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img class="dahye" src="images/포스터/정다혜2.png" alt="정다혜 포스터">
+            </div>
+            <div class="theback">
+              <div>
+                <h1>2023/03/11</h1>
+                <h3>정다혜 A Time Of Sincerity</h3>
+                <p>대구미술관 6전시실</p>
+                <a href="#">자세히보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 예정전시 END -->
+
+    <!-- 작품투표공간 -->
+    <div class="third__container ct_margin" onmouseover="body.style.backgroundColor='#fff'">
+      <div class="third__content__title">
+        <div class="content__title Bebas center" data-aos="fade-up" data-aos-duration="500">WHAT DO YOU<br> WANT TO SEE NEXT?</div>
+        <div class="content__subtitle center">다음 시즌 대구미술관에서 보고싶은 작품을 투표해주세요!</div>
+      </div>
+    </div>
+    <div class="vote__wrapper" >
+      <div class="vote__container" >
+        <div class="vote__one vote_modalOpen1">
+          <img src="images/vote/나혜석.png" alt="나혜석 작가 작품" onmouseover="body.style.backgroundColor='#7DA796'">
+        </div>
+        <div class="vote__two vote_modalOpen2">
+          <img src="images/vote/박서희도예가.png" alt="박서희 작가 작품" onmouseover="body.style.backgroundColor='#CADCF7'"> <!--onmouseout="body.style.backgroundColor='#fff'"-->
+        </div>
+        <div class="vote__three vote_modalOpen3">
+          <img src="images/vote/김준수1.png" alt="김준수 작가 작품" onmouseover="body.style.backgroundColor='#E7AA6D'">
+        </div>
+      </div>
+    </div>
+    <!-- 작품투표공간 END -->
+
+    <!-- 아카이브 :아코디언 -->
+    <div class="four__container ct_margin" onmouseover="body.style.backgroundColor='#fff'">
+      <div class="content__title Bebas acc_title" data-aos="fade-up" data-aos-duration="500">DAEGU ART MUSEUM'S<br> ARCHIVE</div>
+      <div class="accodion_menu">
+      </div>
+    </div>
+    <!-- 아카이브 END -->
+  </div>
+
+  <!-- 고정버튼 -->
+  <div class="fixed-btn">
+    <button class="top-btn Bebas">Top</button>
+  </div>
+  <!-- Footer -->
+  <footer id="footer"></footer>
+  <!-- footer END -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a5b9adde5a.js" crossorigin="anonymous"></script>
+<script src="js/Exhibition.js"></script>
+<script src="js/archive.js"></script>
+<!-- <script src="/header/header.js"></script> -->
+<script src="footer/footer.js"></script>
+</html>
+

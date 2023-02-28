@@ -1,0 +1,366 @@
+
+.master-container-scroller_item a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #2c9ab7
+}
+.section::-webkit-scrollbar{
+    display: none;
+}
+.master-container-scroller_item a:hover {
+    text-decoration: underline
+}
+.scroll-text{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.scroll-text-bottom{
+    width: 110px;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid black;
+    margin-top: 2vh;
+}
+.scroll-text-bottom::-webkit-scrollbar{
+    display: none;
+}
+.scroll-text::-webkit-scrollbar{
+    display: none;
+}
+.master-container-scroller_item::-webkit-scrollbar{
+    display: none;
+}
+.master-container-scroller_item div::-webkit-scrollbar{
+    display: none;
+}
+
+#master {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0;
+    -webkit-font-smoothing: inherit;
+}
+
+#master {
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+.master-container-scroller_item{
+    font-size: 3vw;
+    height: 50px;
+}
+
+#master-container {
+    background-color: #F5C59C;
+    animation: master-container-bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 50vmin;
+    min-height: 0;
+    max-height: 100%;
+}
+
+#master-container .content {
+    height: auto;
+    width: 100%;
+    margin-left: 3vw;
+    margin-right: inherit;
+}
+
+#master-container-scroller {
+    height: 60px;
+    margin:20px 0;
+    overflow: hidden;
+    line-height: 1.2;
+    position: relative;
+}
+.master-container-scroller_item{
+    font-size: 25px;
+}
+
+#master-container-scroller .master-container-scroller_item {
+    display: block;
+    padding-bottom: 6px;
+    animation: scroll 7s cubic-bezier(0.52, 0.06, 0.25, 1.1) infinite;
+}
+
+
+#master-container-scroller .master-container-scroller_item:nth-child(1),
+#master-container-scroller .master-container-scroller_item:nth-child(1) a {
+    color: #eb4d31
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(3),
+#master-container-scroller .master-container-scroller_item:nth-child(3) a {
+    color: #17ad8d
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(4),
+#master-container-scroller .master-container-scroller_item:nth-child(4) a {
+    color: #296dd2
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(2),
+#master-container-scroller .master-container-scroller_item:nth-child(2) a {
+    color: #e63f5b
+}
+
+@keyframes master-container-bg {
+    0.0% {
+        background-color: #F5C59C
+    }
+
+    35% {
+        background-color: #ECC9CB
+    }
+
+    50% {
+        background-color: #D9E2CB
+    }
+
+    75% {
+        background-color: #B4E2EE
+    }
+    100.0% {
+        background-color: #F5C59C
+    }
+}
+
+
+@keyframes scroll {
+    0.0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    25% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    50% {
+        -webkit-transform: translateY(-90px);
+        transform: translateY(-90px);
+    }
+    100% {
+        -webkit-transform: translateY(-140px);
+        transform: translateY(-140px);
+    }
+}
+/* 가로해상도가 768px이상 _tablet */
+@media (min-width:768px){ 
+.master-container-scroller_item{
+    font-size: 35px;
+    height: 100px;
+}
+    .scroll-text{
+        font-size: 40px;
+    }
+    @keyframes scroll {
+        0.0% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+        25% {
+            -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+        }
+        50% {
+            -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+        }
+        100% {
+            -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+        }
+    }
+}
+
+/* 가로해상도 1024px 이상_Desktop */
+@media (min-width:1024px){
+    .master-container-scroller_item{
+    font-size: 43px;
+    }
+    .scroll-text{
+        font-size: 55px;
+    }
+    .scroll-text-bottom{
+        font-size: 30px;
+        width: 170px;
+    }
+    #master-container .content{
+        margin-left: 11vw;
+    }
+}
+
+
+@-webkit-keyframes scroll-mobile {
+ 0.0% {
+     -webkit-transform: translateY(0px);
+     transform: translateY(0px)
+ }
+ 3.7037037037037037% {
+     -webkit-transform: translateY(0px);
+     transform: translateY(0px)
+ }
+ 11.11111111111111% {
+     -webkit-transform: translateY(-48px);
+     transform: translateY(-48px)
+ }
+ 14.814814814814815% {
+     -webkit-transform: translateY(-48px);
+     transform: translateY(-48px)
+ }
+ 22.22222222222222% {
+     -webkit-transform: translateY(-96px);
+     transform: translateY(-96px)
+ }
+ 25.925925925925927% {
+     -webkit-transform: translateY(-96px);
+     transform: translateY(-96px)
+ }
+ 33.333333333333336% {
+     -webkit-transform: translateY(-144px);
+     transform: translateY(-144px)
+ }
+ 37.03703703703704% {
+     -webkit-transform: translateY(-144px);
+     transform: translateY(-144px)
+ }
+ 44.44444444444444% {
+     -webkit-transform: translateY(-192px);
+     transform: translateY(-192px)
+ }
+ 48.148148148148145% {
+     -webkit-transform: translateY(-192px);
+     transform: translateY(-192px)
+ }
+ 55.55555555555556% {
+     -webkit-transform: translateY(-240px);
+     transform: translateY(-240px)
+ }
+ 59.25925925925926% {
+     -webkit-transform: translateY(-240px);
+     transform: translateY(-240px)
+ }
+ 66.66666666666667% {
+     -webkit-transform: translateY(-288px);
+     transform: translateY(-288px)
+ }
+ 70.37037037037037% {
+     -webkit-transform: translateY(-288px);
+     transform: translateY(-288px)
+ }
+ 77.77777777777777% {
+     -webkit-transform: translateY(-336px);
+     transform: translateY(-336px)
+ }
+ 81.48148148148148% {
+     -webkit-transform: translateY(-336px);
+     transform: translateY(-336px)
+ }
+ 88.88888888888889% {
+     -webkit-transform: translateY(-384px);
+     transform: translateY(-384px)
+ }
+ 92.5925925925926% {
+     -webkit-transform: translateY(-384px);
+     transform: translateY(-384px)
+ }
+ 100.0% {
+     -webkit-transform: translateY(-432px);
+     transform: translateY(-432px)
+ }
+}
+
+@keyframes scroll-mobile {
+ 0.0% {
+     -webkit-transform: translateY(0px);
+     transform: translateY(0px)
+ }
+ 3.7037037037037037% {
+     -webkit-transform: translateY(0px);
+     transform: translateY(0px)
+ }
+ 11.11111111111111% {
+     -webkit-transform: translateY(-48px);
+     transform: translateY(-48px)
+ }
+ 14.814814814814815% {
+     -webkit-transform: translateY(-48px);
+     transform: translateY(-48px)
+ }
+ 22.22222222222222% {
+     -webkit-transform: translateY(-96px);
+     transform: translateY(-96px)
+ }
+ 25.925925925925927% {
+     -webkit-transform: translateY(-96px);
+     transform: translateY(-96px)
+ }
+ 33.333333333333336% {
+     -webkit-transform: translateY(-144px);
+     transform: translateY(-144px)
+ }
+ 37.03703703703704% {
+     -webkit-transform: translateY(-144px);
+     transform: translateY(-144px)
+ }
+ 44.44444444444444% {
+     -webkit-transform: translateY(-192px);
+     transform: translateY(-192px)
+ }
+ 48.148148148148145% {
+     -webkit-transform: translateY(-192px);
+     transform: translateY(-192px)
+ }
+ 55.55555555555556% {
+     -webkit-transform: translateY(-240px);
+     transform: translateY(-240px)
+ }
+ 59.25925925925926% {
+     -webkit-transform: translateY(-240px);
+     transform: translateY(-240px)
+ }
+ 66.66666666666667% {
+     -webkit-transform: translateY(-288px);
+     transform: translateY(-288px)
+ }
+ 70.37037037037037% {
+     -webkit-transform: translateY(-288px);
+     transform: translateY(-288px)
+ }
+ 77.77777777777777% {
+     -webkit-transform: translateY(-336px);
+     transform: translateY(-336px)
+ }
+ 81.48148148148148% {
+     -webkit-transform: translateY(-336px);
+     transform: translateY(-336px)
+ }
+ 88.88888888888889% {
+     -webkit-transform: translateY(-384px);
+     transform: translateY(-384px)
+ }
+ 92.5925925925926% {
+     -webkit-transform: translateY(-384px);
+     transform: translateY(-384px)
+ }
+ 100.0% {
+     -webkit-transform: translateY(-432px);
+     transform: translateY(-432px)
+ }
+} */
