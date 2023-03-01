@@ -209,42 +209,4 @@
         }
       }
     });  
-
-  
-
-
-
-  // const accItem=document.getElementsByClassName('archive_item');
-  // console.log(accItem);
-  // let accordionItem=null;
-
-  // function getData(){
-  //   fetch('./archive.json')
-  //   .then(res=>res.json())
-  //   .then(result=>{
-  //     accordionItem=result;
-  //     makeList(result);
-  //     console.log(result);
-  //   });
-  // }
-  // function makeList(item){
-  //   accItem.innerHTML=null;
-  //   item.forEach((item)=>{
-  //     for(let i=0;i>accItem.length;i++){
-  //       const result=makeItem(item);
-  //       accItem[i].appendChild(result)
-  //     }
-  //   });
-  // }
-  // function makeItem(item){
-  //   const div=document.createElement('div');
-  //   div.classList.add('item');
-  
-  //   div.innerHTML=`
-  //   <div>hi</div>
-  //   `;
-  //   return div;
-  // }
-
-  // getData();
 })();
